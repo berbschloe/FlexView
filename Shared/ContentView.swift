@@ -20,11 +20,8 @@ struct ContentView: View {
       ) { item in
         Text(verbatim: item)
           .padding(8)
-          .background(
-            RoundedRectangle(cornerRadius: 8)
-              .fill(Color.gray.opacity(0.2))
-          ).onTapGesture {
-            
+          .background(RoundedRectangle(cornerRadius: 8).fill(Color.gray.opacity(0.2)))
+          .onTapGesture {
             model.originalItems.removeAll { $0 == item}
             model.wordCount -= 1
           }
