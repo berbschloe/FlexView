@@ -8,12 +8,84 @@
 
 /* Begin PBXBuildFile section */
 		77D3A23A2645A0BB0064823E /* FlexView.h in Headers */ = {isa = PBXBuildFile; fileRef = 77D3A2382645A0BB0064823E /* FlexView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		77D3A2532645A0E30064823E /* FlexViewExampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77D3A2412645A0E10064823E /* FlexViewExampleApp.swift */; };
+		77D3A2542645A0E30064823E /* FlexViewExampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77D3A2412645A0E10064823E /* FlexViewExampleApp.swift */; };
+		77D3A2552645A0E30064823E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77D3A2422645A0E10064823E /* ContentView.swift */; };
+		77D3A2562645A0E30064823E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77D3A2422645A0E10064823E /* ContentView.swift */; };
+		77D3A2572645A0E30064823E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 77D3A2432645A0E30064823E /* Assets.xcassets */; };
+		77D3A2582645A0E30064823E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 77D3A2432645A0E30064823E /* Assets.xcassets */; };
+		77D3A2602645A0FB0064823E /* FlexView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77D3A25F2645A0FB0064823E /* FlexView.swift */; };
+		77D3A2622645A1210064823E /* _FlexView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77D3A2612645A1210064823E /* _FlexView.swift */; };
+		77D3A2642645A13E0064823E /* SizeReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77D3A2632645A13E0064823E /* SizeReader.swift */; };
+		77D3A2662645A3230064823E /* FlexView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77D3A2352645A0BB0064823E /* FlexView.framework */; };
+		77D3A2672645A3230064823E /* FlexView.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 77D3A2352645A0BB0064823E /* FlexView.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		77D3A26B2645A32D0064823E /* FlexView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77D3A2352645A0BB0064823E /* FlexView.framework */; };
+		77D3A26C2645A32D0064823E /* FlexView.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 77D3A2352645A0BB0064823E /* FlexView.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		77D3A2722645A6560064823E /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77D3A2702645A62D0064823E /* ContentViewModel.swift */; };
+		77D3A2732645A6560064823E /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77D3A2702645A62D0064823E /* ContentViewModel.swift */; };
+		77D3A2762645A67E0064823E /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77D3A2742645A67B0064823E /* SettingsView.swift */; };
+		77D3A2772645A67E0064823E /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77D3A2742645A67B0064823E /* SettingsView.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		77D3A2682645A3230064823E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 77D3A22C2645A0BB0064823E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 77D3A2342645A0BB0064823E;
+			remoteInfo = FlexView;
+		};
+		77D3A26D2645A32D0064823E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 77D3A22C2645A0BB0064823E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 77D3A2342645A0BB0064823E;
+			remoteInfo = FlexView;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		77D3A26A2645A3230064823E /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				77D3A2672645A3230064823E /* FlexView.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		77D3A26F2645A32D0064823E /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				77D3A26C2645A32D0064823E /* FlexView.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		77D3A2352645A0BB0064823E /* FlexView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FlexView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		77D3A2382645A0BB0064823E /* FlexView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FlexView.h; sourceTree = "<group>"; };
 		77D3A2392645A0BB0064823E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		77D3A2412645A0E10064823E /* FlexViewExampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlexViewExampleApp.swift; sourceTree = "<group>"; };
+		77D3A2422645A0E10064823E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		77D3A2432645A0E30064823E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		77D3A2482645A0E30064823E /* FlexViewExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlexViewExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		77D3A24A2645A0E30064823E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		77D3A24F2645A0E30064823E /* FlexViewExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlexViewExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		77D3A2512645A0E30064823E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		77D3A2522645A0E30064823E /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		77D3A25F2645A0FB0064823E /* FlexView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlexView.swift; sourceTree = "<group>"; };
+		77D3A2612645A1210064823E /* _FlexView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _FlexView.swift; sourceTree = "<group>"; };
+		77D3A2632645A13E0064823E /* SizeReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SizeReader.swift; sourceTree = "<group>"; };
+		77D3A2702645A62D0064823E /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
+		77D3A2742645A67B0064823E /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -24,6 +96,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		77D3A2452645A0E30064823E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				77D3A2662645A3230064823E /* FlexView.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		77D3A24C2645A0E30064823E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				77D3A26B2645A32D0064823E /* FlexView.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -31,7 +119,11 @@
 			isa = PBXGroup;
 			children = (
 				77D3A2372645A0BB0064823E /* FlexView */,
+				77D3A2402645A0E10064823E /* Shared */,
+				77D3A2492645A0E30064823E /* iOS */,
+				77D3A2502645A0E30064823E /* macOS */,
 				77D3A2362645A0BB0064823E /* Products */,
+				77D3A2652645A3230064823E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -39,6 +131,8 @@
 			isa = PBXGroup;
 			children = (
 				77D3A2352645A0BB0064823E /* FlexView.framework */,
+				77D3A2482645A0E30064823E /* FlexViewExample.app */,
+				77D3A24F2645A0E30064823E /* FlexViewExample.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -48,8 +142,47 @@
 			children = (
 				77D3A2382645A0BB0064823E /* FlexView.h */,
 				77D3A2392645A0BB0064823E /* Info.plist */,
+				77D3A25F2645A0FB0064823E /* FlexView.swift */,
+				77D3A2612645A1210064823E /* _FlexView.swift */,
+				77D3A2632645A13E0064823E /* SizeReader.swift */,
 			);
 			path = FlexView;
+			sourceTree = "<group>";
+		};
+		77D3A2402645A0E10064823E /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				77D3A2412645A0E10064823E /* FlexViewExampleApp.swift */,
+				77D3A2422645A0E10064823E /* ContentView.swift */,
+				77D3A2702645A62D0064823E /* ContentViewModel.swift */,
+				77D3A2742645A67B0064823E /* SettingsView.swift */,
+				77D3A2432645A0E30064823E /* Assets.xcassets */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		77D3A2492645A0E30064823E /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				77D3A24A2645A0E30064823E /* Info.plist */,
+			);
+			path = iOS;
+			sourceTree = "<group>";
+		};
+		77D3A2502645A0E30064823E /* macOS */ = {
+			isa = PBXGroup;
+			children = (
+				77D3A2512645A0E30064823E /* Info.plist */,
+				77D3A2522645A0E30064823E /* macOS.entitlements */,
+			);
+			path = macOS;
+			sourceTree = "<group>";
+		};
+		77D3A2652645A3230064823E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -84,15 +217,61 @@
 			productReference = 77D3A2352645A0BB0064823E /* FlexView.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		77D3A2472645A0E30064823E /* FlexViewExample (iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 77D3A2592645A0E30064823E /* Build configuration list for PBXNativeTarget "FlexViewExample (iOS)" */;
+			buildPhases = (
+				77D3A2442645A0E30064823E /* Sources */,
+				77D3A2452645A0E30064823E /* Frameworks */,
+				77D3A2462645A0E30064823E /* Resources */,
+				77D3A26A2645A3230064823E /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				77D3A2692645A3230064823E /* PBXTargetDependency */,
+			);
+			name = "FlexViewExample (iOS)";
+			productName = "FlexViewExample (iOS)";
+			productReference = 77D3A2482645A0E30064823E /* FlexViewExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+		77D3A24E2645A0E30064823E /* FlexViewExample (macOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 77D3A25C2645A0E30064823E /* Build configuration list for PBXNativeTarget "FlexViewExample (macOS)" */;
+			buildPhases = (
+				77D3A24B2645A0E30064823E /* Sources */,
+				77D3A24C2645A0E30064823E /* Frameworks */,
+				77D3A24D2645A0E30064823E /* Resources */,
+				77D3A26F2645A32D0064823E /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				77D3A26E2645A32D0064823E /* PBXTargetDependency */,
+			);
+			name = "FlexViewExample (macOS)";
+			productName = "FlexViewExample (macOS)";
+			productReference = 77D3A24F2645A0E30064823E /* FlexViewExample.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		77D3A22C2645A0BB0064823E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 1250;
 				LastUpgradeCheck = 1250;
 				TargetAttributes = {
 					77D3A2342645A0BB0064823E = {
+						CreatedOnToolsVersion = 12.5;
+						LastSwiftMigration = 1250;
+					};
+					77D3A2472645A0E30064823E = {
+						CreatedOnToolsVersion = 12.5;
+					};
+					77D3A24E2645A0E30064823E = {
 						CreatedOnToolsVersion = 12.5;
 					};
 				};
@@ -111,6 +290,8 @@
 			projectRoot = "";
 			targets = (
 				77D3A2342645A0BB0064823E /* FlexView */,
+				77D3A2472645A0E30064823E /* FlexViewExample (iOS) */,
+				77D3A24E2645A0E30064823E /* FlexViewExample (macOS) */,
 			);
 		};
 /* End PBXProject section */
@@ -123,6 +304,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		77D3A2462645A0E30064823E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				77D3A2572645A0E30064823E /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		77D3A24D2645A0E30064823E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				77D3A2582645A0E30064823E /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -130,10 +327,48 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				77D3A2602645A0FB0064823E /* FlexView.swift in Sources */,
+				77D3A2622645A1210064823E /* _FlexView.swift in Sources */,
+				77D3A2642645A13E0064823E /* SizeReader.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		77D3A2442645A0E30064823E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				77D3A2552645A0E30064823E /* ContentView.swift in Sources */,
+				77D3A2762645A67E0064823E /* SettingsView.swift in Sources */,
+				77D3A2532645A0E30064823E /* FlexViewExampleApp.swift in Sources */,
+				77D3A2722645A6560064823E /* ContentViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		77D3A24B2645A0E30064823E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				77D3A2562645A0E30064823E /* ContentView.swift in Sources */,
+				77D3A2772645A67E0064823E /* SettingsView.swift in Sources */,
+				77D3A2542645A0E30064823E /* FlexViewExampleApp.swift in Sources */,
+				77D3A2732645A6560064823E /* ContentViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		77D3A2692645A3230064823E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 77D3A2342645A0BB0064823E /* FlexView */;
+			targetProxy = 77D3A2682645A3230064823E /* PBXContainerItemProxy */;
+		};
+		77D3A26E2645A32D0064823E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 77D3A2342645A0BB0064823E /* FlexView */;
+			targetProxy = 77D3A26D2645A32D0064823E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		77D3A23B2645A0BB0064823E /* Debug */ = {
@@ -261,6 +496,7 @@
 		77D3A23E2645A0BB0064823E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 3B9V6MMV7W;
@@ -269,6 +505,34 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = FlexView/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.brandon-erbschloe.FlexView";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		77D3A23F2645A0BB0064823E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 3B9V6MMV7W;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = FlexView/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -280,29 +544,98 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
-			name = Debug;
+			name = Release;
 		};
-		77D3A23F2645A0BB0064823E /* Release */ = {
+		77D3A25A2645A0E30064823E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 3B9V6MMV7W;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = FlexView/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = iOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.brandon-erbschloe.FlexView";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.brandon-erbschloe.FlexViewExample";
+				PRODUCT_NAME = FlexViewExample;
+				SDKROOT = iphoneos;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		77D3A25B2645A0E30064823E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3B9V6MMV7W;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = iOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.brandon-erbschloe.FlexViewExample";
+				PRODUCT_NAME = FlexViewExample;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		77D3A25D2645A0E30064823E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 3B9V6MMV7W;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = macOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.brandon-erbschloe.FlexViewExample";
+				PRODUCT_NAME = FlexViewExample;
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		77D3A25E2645A0E30064823E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 3B9V6MMV7W;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = macOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.brandon-erbschloe.FlexViewExample";
+				PRODUCT_NAME = FlexViewExample;
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
@@ -323,6 +656,24 @@
 			buildConfigurations = (
 				77D3A23E2645A0BB0064823E /* Debug */,
 				77D3A23F2645A0BB0064823E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		77D3A2592645A0E30064823E /* Build configuration list for PBXNativeTarget "FlexViewExample (iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				77D3A25A2645A0E30064823E /* Debug */,
+				77D3A25B2645A0E30064823E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		77D3A25C2645A0E30064823E /* Build configuration list for PBXNativeTarget "FlexViewExample (macOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				77D3A25D2645A0E30064823E /* Debug */,
+				77D3A25E2645A0E30064823E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
