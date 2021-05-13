@@ -25,7 +25,7 @@ public struct FlexView<Data: Collection, Content: View>: View where Data.Element
 
     public var body: some View {
         ZStack(alignment: Alignment(horizontal: alignment, vertical: .center)) {
-            Color.clear.frame(height: 1).readSize { size in
+            Rectangle().foregroundColor(Color.clear).frame(height: 1).readSize { size in
                 availableWidth = size.width
             }
             _FlexView(
