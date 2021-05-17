@@ -15,7 +15,7 @@ class ContentViewModel: ObservableObject {
 
   @Published var spacing: CGFloat = 8
   @Published var padding: CGFloat = 8
-  @Published var wordCount: Int = 5
+  @Published var wordCount: Int = 0
   @Published var alignmentIndex = 0
 
   var words: [String] {

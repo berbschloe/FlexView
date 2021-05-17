@@ -9,49 +9,43 @@ import SwiftUI
 
 struct Settings: View {
     
-  @ObservedObject var model: ContentViewModel
+    @ObservedObject var model: ContentViewModel
     
-  let alignmentName: [String] = ["leading", "center", "trailing"]
+    let alignmentName: [String] = ["leading", "center", "trailing"]
+    
+    var body: some View {
+        VStack {
+            Stepper(value: $model.wordCount, in: 0...model.originalItems.count) {
+                Text("\(model.wordCount) words")
+            }
 
-  var body: some View {
-    VStack {
-      Stepper(value: $model.wordCount, in: 0...model.originalItems.count) {
-        Text("\(model.wordCount) words")
-      }
+            HStack {
+                Text("Padding")
+                Slider(value: $model.padding, in: 0...60) { Text("") }
+            }
 
-      HStack {
-        Text("Padding")
-        Slider(value: $model.padding, in: 0...60) { Text("") }
-      }
+            HStack {
+                Text("Spacing")
+                Slider(value: $model.spacing, in: 0...40) { Text("") }
+            }
 
-      HStack {
-        Text("Spacing")
-        Slider(value: $model.spacing, in: 0...40) { Text("") }
-      }
-
-      HStack {
-        Text("Alignment")
-        Picker("Choose alignment", selection: $model.alignmentIndex) {
-          ForEach(0..<model.alignments.count) {
-            Text(alignmentName[$0])
-          }
+            HStack {
+                Text("Alignment")
+                Picker("Choose alignment", selection: $model.alignmentIndex) {
+                    ForEach(0..<model.alignments.count) {
+                        Text(alignmentName[$0])
+                    }
+                }
+                .pickerStyle(SegmentedPickerStyle())
+            }
+            HStack {
+                Button("Shuffle") { model.originalItems.shuffle() }
+            }
         }
-        .pickerStyle(SegmentedPickerStyle())
-      }
-
-      Button {
-        model.originalItems.shuffle()
-      } label: {
-        Text("Shuffle")
-      }
+        .padding()
+        .background(Color(UIColor.systemBackground))
+        .clipShape(RoundedRectangle(cornerRadius: 20))
+        .overlay(RoundedRectangle(cornerRadius: 20).stroke(Color.primary, lineWidth: 4))
+        .padding()
     }
-    .padding()
-    .background(Color(UIColor.systemBackground))
-    .clipShape(RoundedRectangle(cornerRadius: 20))
-    .overlay(
-         RoundedRectangle(cornerRadius: 20)
-             .stroke(Color.primary, lineWidth: 4)
-     )
-    .padding()
-  }
 }

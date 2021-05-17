@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct FlexViewExampleApp: App {
+    
+    let contentViewModel = ContentViewModel()
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView(model: contentViewModel)
         }
     }
 }

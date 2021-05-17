@@ -39,17 +39,17 @@ struct _FlexView<Data: Collection, Content: View>: View where Data.Element: Hash
         var remainingWidth = availableWidth
 
         for element in data {
-            let elementSize = elementsSize[element, default: CGSize(width: availableWidth, height: 1)]
+            let elementSize = elementsSize[element, default: CGSize(width: availableWidth, height: 0)]
 
             if remainingWidth - (elementSize.width + spacing) >= 0 {
                 rows[currentRow].append(element)
             } else {
-                currentRow = currentRow + 1
+                currentRow += 1
                 rows.append([element])
                 remainingWidth = availableWidth
             }
 
-            remainingWidth = remainingWidth - (elementSize.width + spacing)
+            remainingWidth -= (elementSize.width + spacing)
         }
 
         return rows
