@@ -10,13 +10,13 @@ import SwiftUI
 public struct FlexView<Data: Collection, Content: View>: View where Data.Element: Hashable {
     
     private let data: Data
-    private let spacing: CGFloat
     private let alignment: HorizontalAlignment
+    private let spacing: CGFloat
     private let content: (Data.Element) -> Content
     
     @State private var availableWidth: CGFloat = 0
     
-    public init(data: Data, spacing: CGFloat = 8, alignment: HorizontalAlignment = .leading, content: @escaping (Data.Element) -> Content) {
+    public init(_ data: Data, alignment: HorizontalAlignment = .leading, spacing: CGFloat = 8, content: @escaping (Data.Element) -> Content) {
         self.data = data
         self.spacing = spacing
         self.alignment = alignment
@@ -31,8 +31,8 @@ public struct FlexView<Data: Collection, Content: View>: View where Data.Element
             _FlexView(
                 availableWidth: availableWidth,
                 data: data,
-                spacing: spacing,
                 alignment: alignment,
+                spacing: spacing,
                 content: content
             )
         }

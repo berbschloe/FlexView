@@ -11,8 +11,8 @@ struct _FlexView<Data: Collection, Content: View>: View where Data.Element: Hash
     
     let availableWidth: CGFloat
     let data: Data
-    let spacing: CGFloat
     let alignment: HorizontalAlignment
+    let spacing: CGFloat
     let content: (Data.Element) -> Content
     
     @State var elementsSize: [Data.Element: CGSize] = [:]

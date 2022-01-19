@@ -15,9 +15,9 @@ struct ContentView: View {
     var body: some View {
         ScrollView {
             FlexView(
-                data: model.words,
-                spacing: model.spacing,
-                alignment: model.alignment
+                model.words,
+                alignment: model.alignment,
+                spacing: model.spacing
             ) { item in
                 Text(verbatim: item)
                     .padding(8)
